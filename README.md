@@ -4,7 +4,7 @@ Código da API que tuíta a previsão atual da cidade informada e a previsão pa
 
 ## Endpoints
 
-<b>POST /api/v1/tweets<b>
+<b>POST /api/v1/tweets</b>
 
 Payload da request é composto por um objeto JSON com os seguintes campos:
   - api_key - Chave para o open weather map api
