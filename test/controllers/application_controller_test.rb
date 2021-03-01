@@ -30,38 +30,4 @@ class ApplicationControllerTest < ActiveSupport::TestCase
 
     assert_equal @next_days_message, message
   end
-
-  def current_weather
-    return {
-      :temperature => 22.44,
-      :weather => "céu limpo"
-    }
-  end
-
-  def next_days_forecast
-    return {
-      :list => [
-        {
-          :temperature_average => 19.95,
-          :date => "2021-02-28"
-        },
-        {
-          :temperature_average =>  20.45,
-          :date => "2021-03-01"
-        },
-        {
-          :temperature_average => 20.78,
-          :date => "2021-03-02"
-        },
-        {
-          :temperature_average => 20.73,
-          :date => "2021-03-03"
-        },
-        {
-          :temperature_average => 19.83,
-          :date => "2021-03-04"
-        }
-      ]
-    }
-  end
 end
