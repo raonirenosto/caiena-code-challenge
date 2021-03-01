@@ -74,6 +74,7 @@ GEM
     nio4r (2.5.5)
     nokogiri (1.11.1-x86_64-linux)
       racc (~> 1.4)
+    open_weather_raoni (0.1.0)
     puma (3.12.6)
     racc (1.5.2)
     rack (2.2.3)
@@ -135,6 +136,7 @@ DEPENDENCIES
   bootsnap (>= 1.1.0)
   byebug
   listen (>= 3.0.5, < 3.2)
+  open_weather_raoni
   puma (~> 3.11)
   rails (~> 5.2.4, >= 5.2.4.5)
   spring
