@@ -1,24 +1,32 @@
-# README
+# Caiena Code Challenge
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Código da API que tuíta a previsão atual da cidade informada e a previsão para os próximos 5 dias.
 
-Things you may want to cover:
+## Endpoints
 
-* Ruby version
+<b>POST /api/v1/tweets<b>
 
-* System dependencies
+Payload da request é composto por um objeto JSON com os seguintes campos:
+  - api_key - Chave para o open weather map api
+  - city - Nome da cidade. Seguindo o padrão (https://openweathermap.org/current#name)
 
-* Configuration
+Ex:
 
-* Database creation
+```JSON
+{
+  "api_key": "api_key_aqui",
+  "city": "rio de janeiro,BR"
+}
+```
 
-* Database initialization
+## Configuração
 
-* How to run the test suite
+As seguinte variáveis de ambiente deverão ser setadas:
 
-* Services (job queues, cache servers, search engines, etc.)
+- CONSUMER_KEY 
+- CONSUMER_SECRET
+- ACCESS_TOKEN
+- ACCESS_TOKEN_SECRET
 
-* Deployment instructions
-
-* ...
+Os valores das variáveis acima devem ser preenchidos com os valores disponibilizados na página do desenvolvedor:
+(https://developer.twitter.com/)
