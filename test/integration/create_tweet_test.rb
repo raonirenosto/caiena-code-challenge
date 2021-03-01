@@ -2,7 +2,7 @@ require 'test_helper'
 
 class CreateTweetTest < ActionDispatch::IntegrationTest
   test "tweet city forecast" do
-    post "tweet", as: :json, params: params
+    post api_v1_tweets_path, as: :json, params: params
 
     assert_response true
   end
