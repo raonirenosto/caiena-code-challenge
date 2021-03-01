@@ -1,5 +1,5 @@
 class Api::V1::TweetsController < ApplicationController
   def create
-    # to do
+    render json: {}, status: :ok
   end
 end
