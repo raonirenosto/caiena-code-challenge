@@ -21,7 +21,7 @@ gem 'bootsnap', '>= 1.4.4', require: false
 # gem 'rack-cors'
 
 # Use Open Weather Map api
-gem 'open_weather_raoni'
+gem 'open_weather_raoni', '~> 0.2.0'
 
 # Use twitter
 gem 'twitter'
