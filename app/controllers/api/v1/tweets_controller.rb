@@ -25,7 +25,7 @@ class Api::V1::TweetsController < ApplicationController
 
       client.update(tweet)
 
-      render json: {}, status: :ok
+      render json: { message: "Tweet was sent successfully" }, status: :ok
     end
   end
 end
